@@ -10,11 +10,7 @@ from bars.services import (
 
 
 def index(request):
-	context = {
-		
-
-	}
-	return render(request, "index.html", context)
+	return render(request, "index.html", {})
 
 def show_address_on_map(request):
 	return render(request, "map.html", {})
