@@ -1,0 +1,83 @@
+{
+	"short_name": "barsPWA",
+	"name": "PWA",
+	"lang": "en",
+	"background_color": "#ffffff",
+	"theme_color": "#ffffff",
+	"dir": "auto",
+	"display": "standalone",
+	"orientation": "any",
+	"start_url": ".",
+	"icons": [
+		{
+			"src": "static/pwa/icons/smile-512.png",
+			"type": "image/png",
+			"sizes": "512x512"
+		},
+		{
+			"src": "static/pwa/icons/android-icon-192x192-dunplab-manifest-25707.png",
+			"type": "image/png",
+			"sizes": "192x192"
+		},
+		{
+			"src": "static/pwa/icons/apple-icon-180x180-dunplab-manifest-25707.png",
+			"type": "image/png",
+			"sizes": "180x180"
+		},
+		{
+			"src": "static/pwa/icons/apple-icon-152x152-dunplab-manifest-25707.png",
+			"type": "image/png",
+			"sizes": "152x152"
+		},
+		{
+			"src": "static/pwa/icons/apple-icon-144x144-dunplab-manifest-25707.png",
+			"type": "image/png",
+			"sizes": "144x144"
+		},
+		{
+			"src": "static/pwa/icons/apple-icon-120x120-dunplab-manifest-25707.png",
+			"type": "image/png",
+			"sizes": "120x120"
+		},
+		{
+			"src": "static/pwa/icons/apple-icon-114x114-dunplab-manifest-25707.png",
+			"type": "image/png",
+			"sizes": "114x114"
+		},
+		{
+			"src": "static/pwa/icons/favicon-96x96-dunplab-manifest-25707.png",
+			"type": "image/png",
+			"sizes": "96x96"
+		},
+		{
+			"src": "static/pwa/icons/apple-icon-76x76-dunplab-manifest-25707.png",
+			"type": "image/png",
+			"sizes": "76x76"
+		},
+		{
+			"src": "static/pwa/icons/apple-icon-72x72-dunplab-manifest-25707.png",
+			"type": "image/png",
+			"sizes": "72x72"
+		},
+		{
+			"src": "static/pwa/icons/apple-icon-60x60-dunplab-manifest-25707.png",
+			"type": "image/png",
+			"sizes": "60x60"
+		},
+		{
+			"src": "static/pwa/icon/apple-icon-57x57-dunplab-manifest-25707.png",
+			"type": "image/png",
+			"sizes": "57x57"
+		},
+		{
+			"src": "static/pwa/icons/favicon-32x32-dunplab-manifest-25707.png",
+			"type": "image/png",
+			"sizes": "32x32"
+		},
+		{
+			"src": "static/pwa/icons/favicon-16x16-dunplab-manifest-25707.png",
+			"type": "image/png",
+			"sizes": "16x16"
+		}
+	]
+}

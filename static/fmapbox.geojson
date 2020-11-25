@@ -1,0 +1,185 @@
+{
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "title": "lambic",
+        "description": "Bar bar special oat Ice cheesecake pie.",
+        "icon": "beer"
+      },
+      "geometry": {
+        "coordinates": [
+          37.6540123,
+          55.7545736
+        ],
+        "type": "Point"
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "title": "lambic",
+        "description": "Drink stout oat pie drink cheesecake Ice.",
+        "icon": "beer"
+      },
+      "geometry": {
+        "coordinates": [
+          37.6406696,
+          55.766541
+        ],
+        "type": "Point"
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "title": "lambic",
+        "description": "Sugar beans sesame beans.",
+        "icon": "beer"
+      },
+      "geometry": {
+        "coordinates": [
+          37.6032348,
+          55.7752861
+        ],
+        "type": "Point"
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "title": "lambic",
+        "description": "Pie drink dessert bar Ice sugar stout.",
+        "icon": "beer"
+      },
+      "geometry": {
+        "coordinates": [
+          37.5113862416606,
+          55.73886005
+        ],
+        "type": "Point"
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "title": "lambic",
+        "description": "Pie stout stout sugar dessert cheesecake beer.",
+        "icon": "beer"
+      },
+      "geometry": {
+        "coordinates": [
+          37.6357767,
+          55.77726
+        ],
+        "type": "Point"
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "title": "lambic",
+        "description": "Cheesecake sesame sugar beer pie.",
+        "icon": "beer"
+      },
+      "geometry": {
+        "coordinates": [
+          37.624361,
+          55.7314869
+        ],
+        "type": "Point"
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "title": "lambic",
+        "description": "Wafer pie bar beer beans bar dessert.",
+        "icon": "beer"
+      },
+      "geometry": {
+        "coordinates": [
+          37.6081283,
+          55.767096
+        ],
+        "type": "Point"
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "title": "lambic",
+        "description": "Bar drink oat dessert cheesecake Ice.",
+        "icon": "beer"
+      },
+      "geometry": {
+        "coordinates": [
+          37.6520475,
+          55.7434353
+        ],
+        "type": "Point"
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "title": "lambic",
+        "description": "Ice sesame beer oat oat.",
+        "icon": "beer"
+      },
+      "geometry": {
+        "coordinates": [
+          37.5997223,
+          55.7508463
+        ],
+        "type": "Point"
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "title": "lambic",
+        "description": "Oat Ice wafer special.",
+        "icon": "beer"
+      },
+      "geometry": {
+        "coordinates": [
+          37.627282,
+          55.7563081
+        ],
+        "type": "Point"
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "title": "manneken pis",
+        "description": "Oat stout sugar beans beans wafer.",
+        "icon": "beer"
+      },
+      "geometry": {
+        "coordinates": [
+          37.615561,
+          55.741469
+        ],
+        "type": "Point"
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "title": "manneken pis",
+        "description": "Oat pie Ice stout wafer cheesecake pie.",
+        "icon": "beer"
+      },
+      "geometry": {
+        "coordinates": [
+          42.1768841,
+          47.50748
+        ],
+        "type": "Point"
+      }
+    }
+  ],
+  "type": "FeatureCollection"
+}

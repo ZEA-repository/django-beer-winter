@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+{% load static %}
+<html>
+
+<head>
+	<meta charset='utf-8' />
+	<title>Points on a map</title>
+		
+	<meta 
+		name="viewport" 
+		ontent="initial-scale=1,maximum-scale=1,user-scalable=no" />
+
+	<script src='https://api.mapbox.com/mapbox-gl-js/v1.12.0/mapbox-gl.js'></script>
+	<link 
+		href='https://api.mapbox.com/mapbox-gl-js/v1.12.0/mapbox-gl.css' 
+		rel='stylesheet' />
+
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+</head>
+
+<body>
+	<!-- Mapbox Directions API -->
+	<script src="https://api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-directions/v4.0.2/mapbox-gl-directions.js"></script>
+	<link
+		rel="stylesheet"
+		href="https://api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-directions/v4.0.2/mapbox-gl-directions.css"
+		type="text/css" />
+
+	<!-- Mapbox Geocoding API -->
+	<script src="https://api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-geocoder/v4.5.1/mapbox-gl-geocoder.min.js"></script>
+	<link
+		rel="stylesheet"
+		href="https://api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-geocoder/v4.5.1/mapbox-gl-geocoder.css"
+		type="text/css" />
+
+	<!-- Mapbox css settings -->
+	<link
+		rel="stylesheet"
+		href="{% static 'materialize/css/map/map.css' %}"
+		type="text/css" />
+
+	<!-- Custom css settings -->
+	<link
+		rel="stylesheet"
+		href="{% static 'materialize/css/map/additionalMapStyle.css' %}"
+		type="text/css" />
+
+	<!-- Promise polyfill script required to use Mapbox GL Geocoder in IE 11 -->
+	<script src="https://cdn.jsdelivr.net/npm/es6-promise@4/dist/es6-promise.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/es6-promise@4/dist/es6-promise.auto.min.js"></script>
+
+
+	<div id='map'></div>
+
+	<div class="filter-ctrl">
+		<input
+			id="filter-input"
+			type="text"
+			name="filter"
+			placeholder="Filter by name" />
+	</div>
+
+	<!-- right-click mouse menu -->
+	<nav>
+		<ul class="menu">
+			<li> <span class="menu-icon"><i class="material-icons">person</i> </span> item #01  </li>
+			<li> <span class="menu-icon"> <i class="material-icons">mode_edit</i> </span> item #02 </li>
+			<li> <span class="menu-icon"> <i class="material-icons">palette</i> </span> item #03 </li>
+			<li> <span class="menu-icon"> <i class="material-icons">subway</i> </span> item #04 </li>
+		</ul>
+	</nav>
+
+
+<!-- Mapbox js settings -->
+	<script 
+		type="text/javascript" 
+		src="{% static 'materialize/js/map/map.js' %}"></script>
+
+<!-- Custom js settings -->
+	<script 
+		type="text/javascript" 
+		src="{% static 'materialize/js/map/additionalMapStyle.js' %}"></script>
+
+</body>
+</html>

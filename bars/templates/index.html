@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+{% load pwa %}
+{% load static %}
+<head>
+	{% progressive_web_app_meta %}
+	<title>page</title>
+	<meta charset='utf-8'/>
+
+	<!-- This is to defined the viewport and how the app must behave when on full screen. 
+	This is required too. -->
+	<meta name="description" content="pwa bars">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="full-screen" content="yes">
+	<meta name="apple-itunes-app" content="app-id=myAppStoreID, app-clip-bundle-id=appClipBundleID, app-argument=myAppArgument">
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-title" content="PWA">
+	<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+
+	<link rel="manifest" href="manifest.json">
+	
+	
+	<link 
+		href="https://fonts.googleapis.com/icon?family=Material+Icons" 
+		rel="stylesheet">
+
+	{% block head %}
+	
+	<link 
+		type="text/css" rel="stylesheet" 
+		href="{% static 'materialize/css/materialize.min.css' %}"  
+		media="screen,projection"/>
+
+
+	<link 
+		rel="stylesheet" 
+		href="{% static 'materialize/css/index.css' %}">
+
+	{% endblock %}
+</head>
+
+<body>
+	<header class="menu-wrapper">
+		<div class="menu-holder">
+			<nav class="menu">
+				<a href="#" class="brand-logo left" aria-label="brand-logo"><img src="{% static 'materialize/icons/snowboarding.svg' %}" alt="brand-logo"></a>
+
+				<ul class="right hide-on-med-and-down nav-main">
+					<li> <a href="#sky-jumping">sky jumping</a> </li>
+					<li> <a href="#ski-flying">ski flying</a> </li>
+					<li> <a href="#beer-tranning">beer tranning</a> </li>
+					<li> <a href="#chill-boarding">chill boarding</a> </li>
+					<li> <a href="{% url 'map' %}">adventure time</a> </li>
+				</ul>
+				<div id="slide-out" class="sidenav nav-mobile">
+					<ul>
+						<li class="strip-up">
+							<a class="close-icon" href="#!"><img class="sidenav-close close-icon-action" src="{% static 'materialize/icons/close.svg' %}" alt="close-icon"></a>
+						</li>
+						<li>
+							<div class="brand-logo-mobile center">
+								<a class="logo-mobile"  href="#"><img class="circle" src="{% static 'materialize/icons/snowman.svg' %}" alt="logo-mobile"></a>
+							</div>
+						</li>
+						<li class="strip-li-mobile snowman-strip-bottom"> <a href="#sky-jumping">sky jumping</a> </li>
+						<li class="strip-li-mobile"> <a href="#ski-flying">ski flying</a> </li>
+						<li class="strip-li-mobile"> <a href="#beer-tranning">beer tranning</a> </li>
+						<li class="strip-li-mobile"> <a href="#chill-boarding">chill boarding</a> </li>
+						<li class="strip-li-mobile"> <a href="{% url 'map' %}">adventure time</a> </li>  
+					</ul>
+					<div class="social-links-mobile">
+							<a href="#!"><img src="{% static 'materialize/icons/vk.svg' %}" alt="icon-vk"></a>
+							<a href="#!"><img src="{% static 'materialize/icons/telegram.svg' %}" alt="icon-telegram"></a>
+							<a href="#!"><img src="{% static 'materialize/icons/instagram.svg' %}" alt="icon instagram"></a>
+							<a href="#!"><img src="{% static 'materialize/icons/whatsapp.svg' %}" alt="icon whatsapp"></a>
+					</div>
+				</div>
+				<a href="#" data-target="slide-out" class="sidenav-trigger"><i class="material-icons hide-main-nav-click">menu</i></a>
+
+			</nav>
+		</div>
+			<div class="image-holder"> </div>
+	</header>
+
+
+	{% block content %}
+<main>
+	<section class="sky-jumping scrollspy" id ="sky-jumping">
+		<div class="row">
+			<div class="col s12">
+				<div class="container"><h1> sky jumping </h1></div>
+			</div>
+		</div>
+		<div class="container">
+
+			<div class="row">
+				<div class="col s12 m6">
+					<img class="responsive-img" src="{% static 'materialize/img/sky-jumping.jpg' %}" alt="sky-jumping">
+				</div>
+				<div class="col s12 m6">
+					<h2> <span class="underlineH2">freedom</span> </h2>
+					<p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Facere explicabo, dolore fugiat perferendis ullam tempore, repellat ipsum numquam, molestias iure magni officiis voluptatem. Maxime delectus rem distinctio ullam odit accusantium, adipisci accusamus error mollitia nobis quidem fugit optio nesciunt rerum!</p>
+					<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta nulla facere, perspiciatis accusamus cumque deserunt, odio dicta rem. Eaque, dignissimos.</p>
+					
+					<div class="row">
+						<div class="col s12 right-align content-btn-wrap">
+							<a id="content-btn">Button</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section class="ski-flying scrollspy" id ="ski-flying">
+		<div class="row">
+			<div class="col s12">
+				<div class="container"><h1> ski flying </h1></div>
+			</div>
+		</div>
+		<div class="container">
+			<div class="row">
+				<div class="col s12 m6">
+					<img class="responsive-img" src="{% static 'materialize/img/ski-flying.jpg' %}" alt="ski-flying">
+				</div>
+				<div class="col s12 m6">
+					<h2> <span class="underlineH2">more expression </span> </h2>
+					<p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Facere explicabo, dolore fugiat perferendis ullam tempore, repellat ipsum numquam, molestias iure magni officiis voluptatem. Maxime delectus rem distinctio ullam odit accusantium, adipisci accusamus error mollitia nobis quidem fugit optio nesciunt rerum!</p>
+					<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta nulla facere, perspiciatis accusamus cumque deserunt, odio dicta rem. Eaque, dignissimos.</p>
+					
+					<div class="row"> 
+						<div class="col s12 right-align content-btn-wrap">
+							<a id="content-btn">Button</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section class="beer-tranning scrollspy" id ="beer-tranning">
+		<div class="row">
+			<div class="col s12">
+				<div class="container"><h1> beer tranning </h1></div>
+			</div>
+		</div>
+		<div class="container">
+			<div class="row">
+				<div class="col s12 m6 center">
+					<img class="responsive-img" src="{% static 'materialize/img/beer-tranning.jpg' %}" alt="beer-tranning">
+				</div>
+				<div class="col s12 m6 right">
+					<h2> <span class="underlineH2">BeerTone technologies </span> </h2>
+					<p>  BeerTone technologies (<span id="incorrectWords"><s>old mean 'Burton technologies' </s></span>) is located in lorem ipsum dolor sit amet consectetur, adipisicing elit. Facere explicabo, dolore fugiat perferendis ullam tempore, repellat ipsum numquam, molestias iure magni officiis voluptatem. Maxime delectus rem distinctio ullam odit accusantium, adipisci accusamus error mollitia nobis quidem fugit optio nesciunt rerum!</p>
+					<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta nulla facere, perspiciatis accusamus cumque deserunt, odio dicta rem. Eaque, dignissimos.</p>
+					
+					<div class="row"> 
+						<div class="col s12 right-align content-btn-wrap">
+							<a id="content-btn">Button</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section class="chill-boarding scrollspy" id="chill-boarding">
+		<div class="row">
+			<div class="col s12">
+				<div class="container"><h1> chill boarding </h1></div>
+			</div>
+		</div>
+		<div class="container">
+			<div class="row">
+				<div class="col s12 m6">
+					<img class="responsive-img" src="{% static 'materialize/img/chill-boarding.jpg' %}" alt="chill-boarding">
+				</div>
+				<div class="col s12 m6 right">
+					<h2> <span class="underlineH2"> no rules </span></h2>
+					<p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Facere explicabo, dolore fugiat perferendis ullam tempore, repellat ipsum numquam, molestias iure magni officiis voluptatem. Maxime delectus rem distinctio ullam odit accusantium, adipisci accusamus error mollitia nobis quidem fugit optio nesciunt rerum!</p>
+					<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta nulla facere, perspiciatis accusamus cumque deserunt, odio dicta rem. Eaque, dignissimos.</p>
+					
+					<div class="row"> 
+						<div class="col s12 right-align content-btn-wrap">
+							<a id="content-btn">Button</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+
+<footer class="footer-wrapper">
+	<div class="nav-footer-menu">
+		<div class="row">
+			<div class="left hide-on-med-and-down nav-footer">
+				<ul>
+					<li><a href="#sky-jumping">sky jumping</a> </li>
+					<li><a href="#ski-flying">ski flying</a> </li>
+					<li><a href="#beer-tranning">beer tranning</a></li> 
+					<li><a href="#chill-boarding">chill boarding</a> </li>
+					<li><a href="{% url 'map' %}">adventure time</a> </li>
+				</ul>
+			</div>
+		</div>
+	</div>
+	<div class="container">
+		<div class="row">
+			<div class="col l6 s12">
+				<h5 class="white-text">Footer Content</h5>
+				<p class="grey-text text-lighten-4">You can use rows and columns here to organize your footer content.</p>
+			</div>
+			<div class="col l4 offset-l2 s12">
+				<h5>Social links</h5>
+				<ul class="social-links">
+					<li><a class="grey-text text-lighten-3" href="#!"><img src="{% static 'materialize/icons/vk.svg' %}" alt="icon-vk"></a></li>
+					<li><a class="grey-text text-lighten-3" href="#!"><img src="{% static 'materialize/icons/telegram.svg' %}" alt="icon-telegram"></a></li>
+					<li><a class="grey-text text-lighten-3" href="#!"><img src="{% static 'materialize/icons/instagram.svg' %}" alt="icon-instagram"></a></li>
+					<li><a class="grey-text text-lighten-3" href="#!"><img src="{% static 'materialize/icons/whatsapp.svg' %}" alt="icon-whatsapp"></a></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+
+	<div class="footer-copyright">
+		<div class="container">
+		© 2020 Copyright Text
+		<a class="grey-text text-lighten-4 right" href="#!">More Links</a>
+		</div>
+	</div>
+</footer>
+</main>
+	
+	{% endblock %}
+
+	<script
+	src="https://code.jquery.com/jquery-3.5.1.js"
+	integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc="
+	crossorigin="anonymous"></script>
+
+	<script src="{% static 'materialize/js/materialize.min.js' %}"></script>
+	<script src="{% static 'materialize/js/index.js' %}"></script>
+
+
+</body>
+</html>
