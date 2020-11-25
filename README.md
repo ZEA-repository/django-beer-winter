@@ -5,7 +5,6 @@
 3 LocationIQ API
 4 Beautifulsoup4 
 
-Frontend
 <b>Frontend</b>
 1 Django templates
 2 Materialize 
